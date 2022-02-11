@@ -1,0 +1,209 @@
+@font-face {
+    font-family: Manrope XLight;
+    src: url(../TYPE/Manrope-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Manrope Light;
+    src: url(../TYPE/Manrope-Light.ttf);
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../TYPE/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: Manrope Medium;
+    src: url(../TYPE/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: Manrope SemiBold;
+    src: url(../TYPE/Manrope-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Manrope Bold;
+    src: url(../TYPE/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: Manrope XBold;
+    src: url(../TYPE/Manrope-ExtraBold.ttf);
+}
+
+#img1 {
+    width: 170px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+}
+
+
+#Title
+{
+    position: relative;
+    margin: 0;
+    padding-left: 80px;
+    padding-top: 50px;
+    width: 800px;
+    z-index: 9;
+    flex-wrap: wrap;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+    overflow: hidden;
+    padding: 70px 20px;
+    box-sizing: border-box;   
+}
+
+section::before
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#3d406b, #070029);
+    clip-path: backgroundcolor(65% at 100% -20%);
+}
+
+section::after
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#e8b827, #400003);
+    clip-path: circle(35% at 0% 100%);
+}
+
+.container
+{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .card
+{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+}
+
+.container .card .imgBx
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover .imgBx 
+{
+    transform: translateY(-60px);
+}
+
+.container .card .imgBx #img1
+{
+    max-width: 100%;
+    margin: 0 0 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover .imgBx #img1
+{
+    transform: translate(-20px,-40px) rotate(-25deg) scale(1.3);
+}
+
+.container .card .imgBx #text1
+{
+    font-family: Manrope Light;
+    color: #111;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.container .card .content
+{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .card:hover .content
+{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50px);
+}
+
+.container .card .content .size,
+.container .card .content .color
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.container .card .content a
+{
+    font-family: Manrope;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #101f47;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+

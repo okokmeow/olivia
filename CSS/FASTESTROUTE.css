@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Manrope XLight;
+    src: url(../TYPE/Manrope-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Manrope Light;
+    src: url(../TYPE/Manrope-Light.ttf);
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../TYPE/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: Manrope Medium;
+    src: url(../TYPE/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: Manrope SemiBold;
+    src: url(../TYPE/Manrope-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Manrope Bold;
+    src: url(../TYPE/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: Manrope XBold;
+    src: url(../TYPE/Manrope-ExtraBold.ttf);
+}
+
+
+
+
+header 
+{   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 5%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 20;
+    display: flex;
+
+    background: rgba(64, 76, 133, 0.7);
+    border-radius: 60px;
+}
+
+header .Home
+{
+    position: relative;
+    font-family: Manrope XBold;
+    color: #000;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+header ul
+{
+    position: relatived;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+
+}
+
+header ul li a 
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: Manrope Bold;
+}
+
+#Title
+{
+    position: absolute;
+    margin: 0;
+    top: 22%;
+    left: 10%;
+    width: 500px;
+    z-index: 13;
+    flex-wrap: wrap;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+    overflow: hidden;
+    padding: 70px 20px;
+    box-sizing: border-box;   
+}
+
+section::before
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#3d406b, #070029);
+    clip-path: backgroundcolor(65% at 100% -20%);
+}
+
+section::after
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#e8b827, #400003);
+    clip-path: circle(35% at 0% 100%);
+}
+
+#video
+{
+    position: absolute;
+    top: 30%;
+    margin: 0px;
+    padding: 200px;
+    width: 1000px;
+    z-index: 12;
+}
